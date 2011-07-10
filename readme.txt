@@ -1,7 +1,7 @@
 === Shortcode Empty Paragraph Fix ===
 Contributors: Jonua
 Donate link: 
-Tags: shortcode
+Tags: shortcode,fix
 Requires at least: 2.5
 Tested up to: 3.2
 Stable tag: 0.1
