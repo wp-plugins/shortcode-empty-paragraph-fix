@@ -20,11 +20,6 @@ Fix <a href="http://core.trac.wordpress.org/ticket/12061">known issues</a> when 
 1. Upload folder `shortcode-empty-paragraph-fix` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Frequently Asked Questions ==
-
-
-
-== Screenshots ==
 
 
 == Changelog ==
