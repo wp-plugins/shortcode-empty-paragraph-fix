@@ -5,18 +5,26 @@ Tags: shortcode,fix
 Requires at least: 2.5
 Tested up to: 3.2
 Stable tag: 0.1
+Version: 0.1
 
-Fixs known issues when shortcodes are embedded in a block of content that is filtered by wpautop.
+Fix known issues when shortcodes are embedded in a block of content that is filtered by wpautop.
 
 == Description ==
 
-Fixes <a href="http://core.trac.wordpress.org/ticket/12061">known issues</a>  when shortcodes are embedded in a block of content that is filtered by wpautop.
+Fix <a href="http://core.trac.wordpress.org/ticket/12061">known issues</a> when shortcodes are embedded in a block of content that is filtered by wpautop.
+
 
 
 == Installation ==
 
 1. Upload folder `shortcode-empty-paragraph-fix` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Frequently Asked Questions ==
+
+
+
+== Screenshots ==
 
 
 == Changelog ==
