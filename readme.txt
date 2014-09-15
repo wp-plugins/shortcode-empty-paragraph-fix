@@ -3,7 +3,7 @@ Contributors: Jonua
 Donate link: 
 Tags: shortcode,fix
 Requires at least: 2.5
-Tested up to: 3.7
+Tested up to: 4.0
 Stable tag: 0.2
 Version: 0.2
 
