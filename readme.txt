@@ -13,7 +13,7 @@ Fix known issues when shortcodes are embedded in a block of content that is filt
 
 Fix <a href="http://core.trac.wordpress.org/ticket/12061">known issues</a> when shortcodes are embedded in a block of content that is filtered by wpautop.
 
-= for Theme Developer
+= for Theme Developer =
 
 If you are developing a theme to provide this on a marketplace, you better embed the following code in your functions.php. This code filters only the shortcodes you defined. Otherwise you risk a failed review because the code in the plugin filters content in general which may is not acceptet.
 `
