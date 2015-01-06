@@ -26,6 +26,34 @@ If you dont want to use a whole plugin to solve that bug, you can copy the code 
 
 
 
+== for Theme Developer
+
+If you are developing a theme to provide this on a marketplace, you better embed the following code in your functions.php. This code filters only the shortcodes you defined. Otherwise you risk a failed review because the code in the plugin filters content in general which may is not acceptet.
+`
+function shortcode_empty_paragraph_fix( $content ) {
+
+	// define your shortcodes to filter, '' filters all shortcodes
+	$shortcodes = array( 'your_shortcode_1', 'your_shortcode_2' );
+	
+	foreach ( $shortcodes as $shortcode ) {
+		
+		$array = array (
+			'<p>[' . $shortcode => '[' .$shortcode,
+			'<p>[/' . $shortcode => '[/' .$shortcode,
+			$shortcode . ']</p>' => $shortcode . ']',
+			$shortcode . ']<br />' => $shortcode . ']'
+		);
+
+		$content = strtr( $content, $array );
+	}
+
+	return $content;
+}
+
+add_filter( 'the_content', 'shortcode_empty_paragraph_fix' );
+`
+
+
 == Changelog ==
 
 = 0.1 =
