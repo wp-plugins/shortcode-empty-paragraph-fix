@@ -13,20 +13,7 @@ Fix known issues when shortcodes are embedded in a block of content that is filt
 
 Fix <a href="http://core.trac.wordpress.org/ticket/12061">known issues</a> when shortcodes are embedded in a block of content that is filtered by wpautop.
 
-
-
-== Installation ==
-
-1. Upload folder `shortcode-empty-paragraph-fix` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-
-or
-
-If you dont want to use a whole plugin to solve that bug, you can copy the code of the plugin file shortcode-empty-paragraph-fix.php into your theme function.php
-
-
-
-== for Theme Developer
+=== for Theme Developer
 
 If you are developing a theme to provide this on a marketplace, you better embed the following code in your functions.php. This code filters only the shortcodes you defined. Otherwise you risk a failed review because the code in the plugin filters content in general which may is not acceptet.
 `
@@ -52,6 +39,16 @@ function shortcode_empty_paragraph_fix( $content ) {
 
 add_filter( 'the_content', 'shortcode_empty_paragraph_fix' );
 `
+
+== Installation ==
+
+1. Upload folder `shortcode-empty-paragraph-fix` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+
+or
+
+If you dont want to use a whole plugin to solve that bug, you can copy the code of the plugin file shortcode-empty-paragraph-fix.php into your theme function.php
+
 
 
 == Changelog ==
