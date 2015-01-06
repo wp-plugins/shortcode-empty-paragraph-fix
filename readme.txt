@@ -40,6 +40,8 @@ function shortcode_empty_paragraph_fix( $content ) {
 add_filter( 'the_content', 'shortcode_empty_paragraph_fix' );
 `
 
+Another solution that is acceptet at the envato (themeforest) marketplace comes from [bitfade](https://gist.github.com/bitfade/4555047 "a Gist on Github").
+
 == Installation ==
 
 1. Upload folder `shortcode-empty-paragraph-fix` to the `/wp-content/plugins/` directory
